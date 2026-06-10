@@ -1,0 +1,13 @@
+{
+  "name": "사주랩",
+  "short_name": "사주랩",
+  "description": "사주랩 - 사주도 직관적으로",
+  "start_url": "/saju-manseryeok/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#121212",
+  "theme_color": "#2196F3",
+  "icons": [
+    { "src": "/saju-manseryeok/icon-app.png", "sizes": "any", "type": "image/png" }
+  ]
+}
