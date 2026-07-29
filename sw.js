@@ -1,4 +1,4 @@
-const CACHE_NAME = 'saju-pwa-v21';
+const CACHE_NAME = 'saju-pwa-v22';
 const BASE = '/saju-manseryeok/';
 
 self.addEventListener('install', () => { self.skipWaiting(); });
