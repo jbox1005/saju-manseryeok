@@ -18,27 +18,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/saju-manseryeok/assets/index-C-q1zvua.js"></script>
-    <link rel="stylesheet" crossorigin href="/saju-manseryeok/assets/index-CddZSdi6.css">
+    <script type="module" crossorigin src="/saju-manseryeok/assets/index-BWgOQyHS.js"></script>
+    <link rel="stylesheet" crossorigin href="/saju-manseryeok/assets/index-BZ2sUXz9.css">
   </head>
   <body>
     <script>
-      // JS 번들이 로드되기 전에 테마를 걸어 둔다.
-      // 안 그러면 다크모드 사용자에게 흰 화면이 한 번 번쩍인다.
-      (function () {
-        try {
-          var dark = true;
-          var raw = localStorage.getItem('saju_app_settings');
-          if (raw) {
-            var t = JSON.parse(raw).theme;
-            if (t && typeof t.darkMode === 'boolean') dark = t.darkMode;
-          } else {
-            var legacy = localStorage.getItem('saju_dark');
-            if (legacy !== null) dark = legacy === 'true';
-          }
-          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-        } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
-      })();
+      // 번들이 오기 전에 걸어 둔다. 어두운 쪽 한 벌뿐이라 고를 것이 없다.
+      // CSS도 :root가 이미 어두우므로 이 줄은 [data-theme="dark"]를 보는
+      // 바깥 규칙들을 위한 것이다.
+      document.documentElement.setAttribute('data-theme', 'dark');
     </script>
     <div id="root"></div>
     <script>
