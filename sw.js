@@ -1,4 +1,4 @@
-const CACHE_NAME = 'saju-pwa-v82';
+const CACHE_NAME = 'saju-pwa-v83';
 // 배포 위치를 하드코딩하지 않는다.
 // GitHub Pages는 /saju-manseryeok/ 아래, Cloudflare Pages는 루트에 올라가는데
 // 서비스워커는 자기가 있는 자리를 알고 있으므로 거기서 알아내면 된다.
