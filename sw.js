@@ -1,4 +1,4 @@
-const CACHE_NAME = 'saju-pwa-v164';
+const CACHE_NAME = 'saju-pwa-v165';
 // 배포 위치를 하드코딩하지 않는다.
 // GitHub Pages는 /saju-manseryeok/ 아래, Cloudflare Pages는 루트에 올라가는데
 // 서비스워커는 자기가 있는 자리를 알고 있으므로 거기서 알아내면 된다.
@@ -23,9 +23,14 @@ self.addEventListener('fetch', (event) => {
   if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
   if (url.origin !== self.location.origin) return;
 
+  /* 공지 파일은 캐시에 안 담는다. 매번 ?t=시각 을 붙여 부르므로 담으면
+     부를 때마다 새 항목이 쌓이고, 오프라인에서 옛 공지를 새것처럼 내민다.
+     못 받으면 앱이 제 localStorage 캐시로 산다(noticeStore). */
+  const isNotice = /\/notices\.json$/.test(url.pathname);
+
   event.respondWith(
     fetch(req).then(response => {
-      if (response.ok) {
+      if (response.ok && !isNotice) {
         const clone = response.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(req, clone));
       }
