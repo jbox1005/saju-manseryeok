@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-25T12:59:48.019Z",
+  "notices": [
+    {
+      "id": "2026-08-25-qftj",
+      "publishedAt": "2026-08-25",
+      "title": "업데이트",
+      "body": "내용",
+      "priority": "high",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa",
+        "web",
+        "tauri"
+      ]
+    }
+  ]
+}
