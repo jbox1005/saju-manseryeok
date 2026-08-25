@@ -12,7 +12,15 @@
     <!-- 표준 이름. 애플 전용 태그만으로는 최신 iOS가 못 알아듣는 경우가 있다. -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- ⚠ black-translucent를 쓰면 안 된다. 화면이 상태표시줄 밑까지 이어지는 대신,
+         iOS가 그 자리에 **검정을 57% 덮어씌운다**(실측: #ff0033 → rgb(109,11,31)).
+         무슨 색을 칠하든 그 위에 검은 막이 한 겹 올라가므로, 우리 색을 아무리
+         맞춰도 소용이 없다 — 「상단 검은 그림자」로 세 번 신고받은 것의 정체다.
+         시계·배터리를 어떤 배경에서도 읽히게 하려는 iOS의 처리라 끌 수 없다.
+         타로랩에도 같은 증상이 있었다(두 앱 다 black-translucent였다).
+         black이면 iOS가 상태표시줄을 제 불투명 막대로 그리고 우리 화면은 그
+         아래에서 시작한다 — 덮어씌울 콘텐츠가 없으니 막도 없다. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="사주랩" />
     <link rel="apple-touch-icon" href="/saju-manseryeok/icon-app.png" />
 
