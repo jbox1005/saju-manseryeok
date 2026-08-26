@@ -6,103 +6,128 @@
   <title>개인정보 처리방침 | Privacy Policy - 사주랩</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, 'Noto Sans KR', sans-serif; background: #f5f5f5; color: #333; line-height: 1.8; }
+    body { font-family: -apple-system, 'Noto Sans KR', sans-serif; background: #f7f5f0; color: #2b2925; line-height: 1.8; }
     .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
     h1 { font-size: 24px; margin-bottom: 8px; }
-    h2 { font-size: 18px; margin: 32px 0 12px; color: #1565C0; }
-    h3 { font-size: 15px; margin: 24px 0 8px; color: #555; }
+    h2 { font-size: 18px; margin: 28px 0 12px; color: #8a6d1f; }
     p, li { font-size: 14px; margin-bottom: 8px; }
     ul { padding-left: 20px; }
     .date { font-size: 13px; color: #888; margin-bottom: 32px; }
-    .lang-divider { border-top: 2px solid #ddd; margin: 48px 0; padding-top: 32px; }
-    .app-name { color: #1565C0; font-weight: 700; }
+    .lang-divider { border-top: 2px solid #e3dcc8; margin: 48px 0; padding-top: 32px; }
+    .app-name { color: #8a6d1f; font-weight: 700; }
+    .email { font-size: 16px; font-weight: 700; color: #8a6d1f; }
   </style>
 </head>
 <body>
 <div class="container">
-
-  <!-- 한국어 -->
   <h1>개인정보 처리방침</h1>
-  <p class="date">시행일: 2026년 4월 14일</p>
-
-  <p><span class="app-name">사주랩</span>(이하 "앱")은 사용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다. 본 방침은 앱이 개인정보를 어떻게 처리하는지 안내합니다.</p>
+  <p class="date">시행일: 2026년 8월 26일 (최초 시행 2026년 4월 14일)</p>
+  <p><span class="app-name">사주랩</span>(이하 "앱")은 사용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다. 본 방침은 앱이 정보를 어떻게 다루는지 안내합니다.</p>
 
   <h2>1. 수집하는 개인정보</h2>
-  <p>본 앱은 <strong>어떠한 개인정보도 수집하지 않습니다.</strong></p>
+  <p>앱은 서버를 두지 않으며, 개발자는 사용자의 어떠한 개인정보도 수집·보관하지 않습니다.</p>
   <ul>
-    <li>사용자가 입력하는 명식 정보(이름, 생년월일 등)는 <strong>사용자의 기기에만 저장</strong>되며, 외부 서버로 전송되지 않습니다.</li>
-    <li>상담 기록, 일기 등 모든 데이터는 기기의 로컬 저장소(localStorage)에만 보관됩니다.</li>
+    <li>사용자가 입력하는 본인과 지인의 명식 정보(이름, 생년월일시, 성별, 관계, 메모)와 프로필 사진은 사용자의 기기에만 저장됩니다.</li>
+    <li>관계도, 일기, 상담 기록, 설정 등 모든 자료는 기기의 로컬 저장소(localStorage, IndexedDB)에만 보관됩니다.</li>
     <li>앱은 인터넷 연결 없이도 완전히 동작합니다.</li>
   </ul>
 
-  <h2>2. 데이터 저장 및 관리</h2>
+  <h2>2. 네트워크 사용</h2>
+  <p>앱은 아래의 경우에만 인터넷에 접속하며, 이때 사용자의 개인정보는 전송되지 않습니다.</p>
   <ul>
-    <li>모든 데이터는 사용자의 기기에만 저장됩니다.</li>
-    <li>앱 개발자는 사용자의 데이터에 접근할 수 없습니다.</li>
-    <li>앱을 삭제하면 기기에 저장된 모든 데이터가 함께 삭제됩니다.</li>
+    <li>공지 및 앱 설정 파일(notices.json, config.json) 읽기 — 개발자가 올려 둔 공개 파일을 내려받기만 합니다.</li>
+    <li>의견 보내기(제공되는 경우) — 사용자가 직접 적어 보내는 의견 본문과 앱 버전·플랫폼만 전송됩니다. 이름·이메일·명식 정보는 포함되지 않으며, 사용자가 본문에 스스로 적지 않는 한 개인을 식별할 수 없습니다. 받은 의견은 서비스 개선 목적으로만 쓰고 답장하지 않습니다.</li>
   </ul>
 
-  <h2>3. 제3자 제공</h2>
-  <p>본 앱은 사용자의 데이터를 제3자에게 제공하지 않습니다. 외부 광고 SDK, 분석 도구, 추적 도구를 사용하지 않습니다.</p>
+  <h2>3. 제3자 정보(지인의 명식)</h2>
+  <p>사용자는 가족·지인의 명식을 앱에 등록할 수 있습니다. 이 정보는 사용자의 기기 안에만 머물며 개발자나 제3자에게 전달되지 않습니다. 타인의 정보를 등록·이용하는 책임은 사용자에게 있으며, 당사자의 양해를 구하시기를 권합니다.</p>
 
-  <h2>4. 알림 기능</h2>
-  <p>앱은 사용자가 설정한 시간에 로컬 알림(일진 알림, 일기 알림)을 제공할 수 있습니다. 이 알림은 기기 내에서만 처리되며, 외부 서버를 통하지 않습니다. 알림 기능은 사용자가 직접 활성화/비활성화할 수 있습니다.</p>
+  <h2>4. 공유 카드</h2>
+  <p>사용자가 「공유」를 누르면 풀이 이미지 한 장이 만들어져 사용자가 고른 앱(메신저 등)으로 전달됩니다. 이미지는 사용자의 기기에서 만들어지며, 앱 개발자는 이를 받거나 보관하지 않습니다. 이미지에는 두 사람의 이름과 일주 등 풀이에 필요한 정보가 담기므로 보내기 전에 내용을 확인하시기 바랍니다.</p>
 
-  <h2>5. 아동 개인정보</h2>
-  <p>본 앱은 13세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+  <h2>5. 데이터 저장·백업·삭제</h2>
+  <ul>
+    <li>모든 자료는 사용자의 기기에만 저장됩니다. 개발자는 사용자의 자료에 접근할 수 없습니다.</li>
+    <li>백업 파일은 사용자가 직접 내보내고 보관합니다. 파일에는 등록한 모든 명식·관계·기록이 담기므로 안전한 곳에 두시기 바랍니다.</li>
+    <li>앱을 삭제하면 기기에 저장된 모든 자료가 함께 삭제됩니다. 설정에서 자료를 개별·전체 삭제할 수도 있습니다.</li>
+  </ul>
 
-  <h2>6. 면책 조항</h2>
-  <p>본 앱에서 제공하는 사주 분석 및 운세 정보는 <strong>전통 명리학에 기반한 참고 자료</strong>이며, 의학적·법률적·재정적 조언을 대체하지 않습니다. 중요한 결정은 반드시 전문가와 상담하시기 바랍니다.</p>
+  <h2>6. 제3자 제공</h2>
+  <p>앱은 사용자의 자료를 제3자에게 제공하지 않습니다. 외부 광고 SDK, 분석 도구, 추적 도구를 사용하지 않습니다.</p>
 
-  <h2>7. 방침 변경</h2>
+  <h2>7. 알림 기능</h2>
+  <p>앱은 사용자가 설정한 시간에 로컬 알림(일진 알림, 일기 알림)을 제공할 수 있습니다. 알림은 기기 내에서만 처리되며 외부 서버를 거치지 않습니다. 사용자가 직접 켜고 끌 수 있습니다.</p>
+
+  <h2>8. 체험 모드</h2>
+  <p>체험 모드의 예시 인물 25명은 실존 인물이 아닌 가상의 명식입니다. 체험 모드에서는 어떤 자료도 저장되지 않습니다.</p>
+
+  <h2>9. 아동 개인정보</h2>
+  <p>앱은 13세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>10. 면책 조항</h2>
+  <p>앱이 제공하는 사주 분석, 궁합 풀이, 운세 정보는 전통 명리학에 기반한 참고 자료이며, 의학적·법률적·재정적 조언이나 인간관계에 대한 판단을 대체하지 않습니다. 중요한 결정은 반드시 전문가와 상담하시기 바랍니다.</p>
+
+  <h2>11. 방침 변경</h2>
   <p>본 방침이 변경될 경우 앱 내 공지 또는 본 페이지를 통해 안내합니다.</p>
 
-  <h2>8. 문의</h2>
+  <h2>12. 문의</h2>
   <p>개인정보 처리방침에 관한 문의는 아래로 연락해 주세요.</p>
   <p>이메일: <strong>galdosa@kakao.com</strong></p>
 
-  <!-- English -->
   <div class="lang-divider">
     <h1>Privacy Policy</h1>
-    <p class="date">Effective Date: April 14, 2026</p>
-
-    <p><span class="app-name">SajuLab</span> ("the App") values your privacy and complies with applicable laws. This policy explains how the App handles your information.</p>
+    <p class="date">Effective: August 26, 2026 (first effective April 14, 2026)</p>
+    <p><span class="app-name">SajuLab</span> ("the App") values your privacy and complies with applicable laws. This policy explains how the App handles information.</p>
 
     <h2>1. Information We Collect</h2>
-    <p>This App <strong>does not collect any personal information.</strong></p>
+    <p>The App has no server, and the developer does not collect or store any personal information.</p>
     <ul>
-      <li>All data you enter (names, birth dates, consultation notes, diary entries) is stored <strong>only on your device</strong> and is never transmitted to any external server.</li>
-      <li>All data is stored in the device's local storage (localStorage).</li>
-      <li>The App works fully offline without an internet connection.</li>
+      <li>Birth chart data you enter for yourself and others (name, birth date and time, gender, relationship, notes) and profile photos are stored only on your device.</li>
+      <li>Relationship maps, diary entries, consultation notes, and settings are kept only in the device's local storage (localStorage, IndexedDB).</li>
+      <li>The App works fully offline.</li>
     </ul>
 
-    <h2>2. Data Storage</h2>
+    <h2>2. Network Use</h2>
+    <p>The App connects to the internet only in the following cases, and no personal information is transmitted.</p>
     <ul>
-      <li>All data remains on your device only.</li>
-      <li>The developer has no access to your data.</li>
-      <li>Deleting the App will permanently remove all stored data.</li>
+      <li>Reading announcements and the app settings file (notices.json, config.json) — public files published by the developer are downloaded only.</li>
+      <li>Send feedback (where available) — only the message you write plus the app version and platform are sent. No name, email, or chart data is included; you cannot be identified unless you write identifying details yourself. Feedback is used solely to improve the App and is not replied to.</li>
     </ul>
 
-    <h2>3. Third-Party Sharing</h2>
-    <p>This App does not share data with third parties. No advertising SDKs, analytics tools, or tracking tools are used.</p>
+    <h2>3. Other People's Data</h2>
+    <p>You may register the charts of family and acquaintances. This data stays on your device and is never sent to the developer or third parties. You are responsible for entering others' information and we recommend asking for their consent.</p>
 
-    <h2>4. Notifications</h2>
-    <p>The App may provide local notifications (daily fortune, diary reminders) at user-specified times. These notifications are processed entirely on-device and do not involve external servers. Users can enable or disable notifications at any time.</p>
+    <h2>4. Share Card</h2>
+    <p>When you tap Share, a single image of the reading is generated on your device and handed to the app you choose (messenger, etc.). The developer does not receive or store the image. It contains the two names and chart details used in the reading, so please review it before sending.</p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>This App does not knowingly collect personal information from children under 13.</p>
+    <h2>5. Storage, Backup, and Deletion</h2>
+    <ul>
+      <li>All data remains on your device only. The developer has no access to it.</li>
+      <li>Backup files are exported and kept by you. They contain all registered charts, relationships, and records; store them securely.</li>
+      <li>Deleting the App permanently removes all stored data. You can also delete data individually or entirely in Settings.</li>
+    </ul>
 
-    <h2>6. Disclaimer</h2>
-    <p>The fortune analysis provided by this App is based on <strong>traditional East Asian metaphysics (Saju/Four Pillars of Destiny)</strong> and is intended for reference and entertainment purposes only. It does not constitute medical, legal, or financial advice. Please consult qualified professionals for important decisions.</p>
+    <h2>6. Third-Party Sharing</h2>
+    <p>The App does not share data with third parties. No advertising SDKs, analytics, or tracking tools are used.</p>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>Any changes to this policy will be communicated through the App or this page.</p>
+    <h2>7. Notifications</h2>
+    <p>The App may provide local notifications (daily fortune, diary reminders) at user-specified times. They are processed entirely on-device and can be turned on or off at any time.</p>
 
-    <h2>8. Contact</h2>
-    <p>For questions about this privacy policy, please contact:</p>
+    <h2>8. Demo Mode</h2>
+    <p>The 25 sample people in demo mode are fictional. Nothing is saved while demo mode is on.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>The App does not knowingly collect personal information from children under 13.</p>
+
+    <h2>10. Disclaimer</h2>
+    <p>Readings provided by the App are based on traditional East Asian metaphysics and are for reference only. They do not constitute medical, legal, or financial advice, nor a judgment about any relationship. Please consult qualified professionals for important decisions.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>Any changes will be communicated through the App or this page.</p>
+
+    <h2>12. Contact</h2>
     <p>Email: <strong>galdosa@kakao.com</strong></p>
   </div>
-
 </div>
 </body>
 </html>
