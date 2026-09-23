@@ -1,0 +1,39 @@
+{
+  "gal": {
+    "home-hello": {
+      "pose": "teach"
+    },
+    "home-first-map": {
+      "pose": "shout"
+    },
+    "map-empty": {
+      "pose": "point"
+    },
+    "map-line": {
+      "pose": "praise"
+    },
+    "map-tap": {
+      "pose": "proud"
+    },
+    "map-honest": {
+      "pose": "fury"
+    },
+    "map-many": {
+      "pose": "fury"
+    },
+    "list-search": {
+      "pose": "proud"
+    },
+    "detail-dict": {
+      "pose": "praise"
+    },
+    "onb-name-1": {
+      "text": "이름은 편한 대로 적게. <b>개인정보는 이 기기 밖으로는 안 나가네.</b>"
+    },
+    "onb-time-1": {
+      "text": "딱하군.. 생시를 모르면 <b>「시간을 모릅니다」</b>에 표시하게. <b>단, 시주는 제외하고 사주가 계산</b>되네.",
+      "pose": "pity"
+    }
+  },
+  "updatedAt": "2026-09-23T08:38:35.088Z"
+}
