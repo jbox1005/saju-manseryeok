@@ -28,8 +28,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/saju-manseryeok/assets/index-DJnV3jFW.js"></script>
-    <link rel="stylesheet" crossorigin href="/saju-manseryeok/assets/index-Bufd3mp7.css">
+    <script type="module" crossorigin src="/saju-manseryeok/assets/index-DAxTvWHL.js"></script>
+    <link rel="stylesheet" crossorigin href="/saju-manseryeok/assets/index-Df33IJaV.css">
   </head>
   <body>
     <script>
@@ -38,6 +38,56 @@
       // 바깥 규칙들을 위한 것이다.
       document.documentElement.setAttribute('data-theme', 'dark');
     </script>
+    <!-- ── 로딩 화면 ──
+         React가 오기 전에 먼저 뜬다. 그래서 여기(index.html)에 있다 —
+         번들 안에 두면 정작 기다리는 동안은 빈 화면이다.
+         ⚠ 현관의 태그라인과 인사를 여기로 옮겼다(2026-09-21). 켤 때 한 번
+            읽히면 되는 말이라 문간에 늘 세워 둘 까닭이 없었고, 그 자리는
+            갈도사가 설 자리로 쓴다. 형제 앱 오늘한끼의 스플래시와 같은 결이다. -->
+    <div class="sp" id="sp" aria-hidden="true">
+      <div class="sp-in">
+        <img src="/saju-manseryeok/icon-app.png" alt="" />
+        <p class="sp-t">여덟 글자에 담긴<br />인연의 별자리</p>
+        <span class="sp-line"></span>
+      </div>
+    </div>
+    <style>
+      .sp {
+        position: fixed; inset: 0; z-index: 100;
+        display: flex; align-items: center; justify-content: center;
+        background: radial-gradient(ellipse at 50% 42%, #1b1830 0%, #121212 68%);
+        transition: opacity .55s ease, visibility .55s;
+      }
+      .sp.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+      .sp-in { display: flex; flex-direction: column; align-items: center; gap: 18px;
+               animation: sp-in .9s ease both; }
+      .sp-in img { height: min(30vh, 188px); width: auto; border-radius: 26px;
+                   box-shadow: 0 14px 40px rgba(0, 0, 0, .55); }
+      .sp-t { margin: 0; text-align: center; line-height: 1.6;
+              font-family: "Gowun Batang", serif; font-size: 17px;
+              letter-spacing: .04em; color: #b9b0a0; }
+      .sp-line { width: 0; height: 2px; background: #C8A44A; animation: sp-line 1.5s ease .35s both; }
+      @keyframes sp-in { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
+      @keyframes sp-line { from { width: 0; } to { width: 44px; } }
+      @media (prefers-reduced-motion: reduce) {
+        .sp-in, .sp-line { animation: none; } .sp { transition: none; } .sp-line { width: 44px; }
+      }
+    </style>
+    <script>
+      /* 로고를 충분히 보여 주고 걷는다. 어지러운 분께는 스치듯 지나간다.
+         ⚠ DOM에서 아주 빼 버린다 — position: fixed로 남겨 두면 iOS 웹킷에서
+            영구 GPU 겹이 되어 앱을 쓰는 내내 합성 비용을 문다. */
+      (function () {
+        var sp = document.getElementById('sp');
+        if (!sp) return;
+        var quick = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        setTimeout(function () {
+          sp.classList.add('hide');
+          setTimeout(function () { sp.remove(); }, 700);
+        }, quick ? 300 : 1500);
+      })();
+    </script>
+
     <div id="root"></div>
     <script>
       if ('serviceWorker' in navigator) {
